@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-size: 25px;
+            font-weight: bold;
+            color:rgb(47, 4, 88);
+            padding:20px;
+            margin:30px 20px;
+
+        }
+        input{
+            font-size:15px;
+            padding:20px,5px;
+            height:30px;
+            width:300px
+        }
+        button{
+            width:200px;
+            margin:10px 30px;
+            height:30px;
+            font-size:20px;
+            background-color: rgb(231, 148, 148);
+        }
+        section{
+            background-color: gray;
+            width:40vw;
+            height:20vh;
+            border:2px solid black;
+            margin:20%;
+        }
+    </style>
+</head>
+<body>
+   <section>
+     <label >Enter Number1:</label>
+    <input type="text" id="num1" placeholder="Enter only number"><br/><br/>
+    <label >Enter Number2:</label>
+    <input type="text" id="num2" placeholder="Enter only number"><br/><br/>
+    <label>Result :</label>
+    <input type="text" id="res" readonly> <br/><br/>
+    <button onclick="sum()">Add</button>
+    <button onclick="subtract()">Subtract</button><br/>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <script type="text/javascript" src="task1.js"></script>
+   </section>
+</body>
+</html>

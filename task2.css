@@ -1,0 +1,96 @@
+h1 {
+  text-align: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 80px;
+  animation: headinganimation 2s infinite;
+}
+h3 {
+  font-family: times new roman;
+  font-size: 40px;
+  color: rgb(51, 53, 166);
+}
+body {
+  background-color: #727f9a8b;
+}
+.container {
+  height: auto;
+  width: auto;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #f3eed9;
+  margin: 0 20px;
+}
+.box {
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 30px auto;
+  /* margin-top: 30px; */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 17px;
+  background-color: #eae2d6;
+}
+input {
+  width: 100%;
+  height: 70px;
+  padding-left: 10px;
+  font-size: 40px;
+}
+button {
+  height: 80px;
+  width: 80%;
+  font-size: 40px;
+  text-align: center;
+  border: 0px solid;
+  border-radius: 10px;
+  /* background-color:#801919; */
+  background-color: #91cfe6;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-left:10%;
+  animation: buttonAnimation2 2s infinite;
+}
+label {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #413333;
+  font-weight: bold;
+}
+
+@keyframes buttonAnimation2 {
+  0% {
+    background-color: #83b7db;
+  }
+  50% {
+    background-color: #c6d9ce;
+  }
+  100% {
+    background-color: #83b7db;
+  }
+}
+@keyframes headinganimation {
+  0% {
+    transform: scale(1);
+    color:#413333
+  }
+  50% {
+    transform: scale(1.2);
+    color:#101110
+  }
+  100% {
+    transform: scale(1);
+    color:#413333
+  }
+}
+.box:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
